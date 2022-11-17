@@ -8,7 +8,7 @@ const Home = () => {
                     <img src="https://www.programming-hero.com/img/web.svg" alt="" />
                 </div>
                 <div className="col">
-                    <h2>Welcome to DevKwiz</h2>
+                    <h2>Welcome to DevQwiz</h2>
                     <p>worlds largest Quiz app, made for developers</p>
                     <p> <b>1.2M</b> users</p>
                     <p> <b>19K</b> Quiz</p>
