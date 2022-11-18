@@ -5,6 +5,7 @@ import Home from './Components/Home/Home';
 import Main from './Components/Layout/Main';
 import Statistics from './Components/Statistics/Statistics';
 import Topics from './Components/Topics/Topics';
+import TopicsDetails from './Components/TopicsDetails/TopicsDetails';
 
 function App() {
   const router = createBrowserRouter([
@@ -37,6 +38,15 @@ function App() {
           <h3>Route isn't defined. try again</h3>
           <h6>Error Code:404</h6>
         </div>
+      },
+      {
+        path: '/topics/:topicsId',
+        loader: async ({ params }) => {
+          // console.log(params.topicsId)
+          // return fetch(`https://openapi.programming-hero.com/api/${params.topicsId}`)
+          return fetch(`https://openapi.programming-hero.com/api/quiz/${params.topicsId}`)
+        },
+        element: <TopicsDetails></TopicsDetails>
       }],
     }
 

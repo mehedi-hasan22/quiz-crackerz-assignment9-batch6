@@ -4,7 +4,7 @@ import Topic from '../Topic/Topic';
 
 const Topics = () => {
     const topics = useLoaderData().data
-    console.log(topics)
+    // console.log(topics)
     return (
         <div className='container px-2 mt-5 d-flex'>
             {
