@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
-        <nav className="navbar navbar-expand-lg navbar-light navbar-dark bg-primary">
+        <nav className="navbar w-100 navbar-expand-lg navbar-light navbar-dark bg-primary">
             <div className="container container-fluid text-white">
                 <a className="navbar-brand fs-1 m-3" href="/#">DevQwiz</a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

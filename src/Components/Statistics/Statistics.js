@@ -4,9 +4,7 @@ import {
     Line,
     XAxis,
     YAxis,
-    CartesianGrid,
     Tooltip,
-    Legend
 } from "recharts";
 
 const Statistics = () => {
@@ -29,8 +27,8 @@ const Statistics = () => {
         }
     ];
     return (
-        <div className='d-flex justify-center mt-5'>
-            <LineChart width={500} height={300} data={data}>
+        <div className='container d-flex justify-content-lg-around mt-5'>
+            <LineChart width={400} height={300} data={data}>
                 <Line type='monotone' dataKey='qs' stroke='#82ca9d' />
                 <XAxis dataKey="name"></XAxis>
                 <YAxis></YAxis>
