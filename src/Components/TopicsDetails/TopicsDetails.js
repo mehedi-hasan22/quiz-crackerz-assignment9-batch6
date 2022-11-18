@@ -11,10 +11,12 @@ const TopicsDetails = () => {
         if (op === correctAnswer) {
             document.getElementById('wr-ans').classList.remove('d-none')
             document.getElementById('r8-ans').classList.add('d-none')
+            alert('YAY!!. Correct Answer!!!')
         }
         else {
             document.getElementById('wr-ans').classList.add('d-none')
             document.getElementById('r8-ans').classList.remove('d-none')
+            alert('ALAS!!. Wrong Answer!!!')
         }
 
     };
@@ -22,9 +24,9 @@ const TopicsDetails = () => {
     // console.log(topics)
     return (
         <div>
-            <div>
-                <h2 id='wr-ans' className='border mt-2 text-info d-none'>Write Answer!!!</h2>
-                <h2 id='r8-ans' className='border mt-2 text-danger d-none'>Wrong Answer!!!</h2>
+            <div className='container'>
+                <h2 id='wr-ans' className='border fs-1 mt-2 text-success d-none'>Write Answer!!!</h2>
+                <h2 id='r8-ans' className='border fs-1 mt-2 text-danger d-none'>Wrong Answer!!!</h2>
             </div>
             {
                 topics.map(qq => <section className='questions container mt-5 border rounded p-5 buttons' key={qq.question}>
@@ -34,7 +36,7 @@ const TopicsDetails = () => {
                             {op}
                         </button>)
                     }
-                    <button title={qq.correctAnswer} className='btn btn-primary px-5 py-2 mt-4'>Hover to see answer--></button>
+                    <button title={qq.correctAnswer} className='btn btn-primary px-5 py-2 mt-4'>Hover to see answer</button>
                 </section>)
 
             }
