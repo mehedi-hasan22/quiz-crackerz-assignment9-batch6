@@ -34,7 +34,7 @@ function App() {
       {
         path: '*',
         element: <div>
-          <h1>oppss!!</h1>
+          <h1>pops!!</h1>
           <h3>Route isn't defined. try again</h3>
           <h6>Error Code:404</h6>
         </div>
