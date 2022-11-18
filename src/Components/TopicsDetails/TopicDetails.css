@@ -1,0 +1,8 @@
+.buttons {
+    display: grid;
+    justify-items: center;
+}
+
+.button {
+    width: 60%;
+}
