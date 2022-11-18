@@ -16,7 +16,7 @@ const TopicsDetails = () => {
         else {
             document.getElementById('wr-ans').classList.add('d-none')
             document.getElementById('r8-ans').classList.remove('d-none')
-            alert('ALAS!!. Wrong Answer!!!')
+            alert('Wrong Answer. Try Again')
         }
 
     };
